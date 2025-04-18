@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Watchlist | AbsoluteCinema</title>
+    <link rel="stylesheet" href="../css/watchlist.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">🖐️Absolute😐<span>Cinema🖐️</span></a>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search for movies, directors, actors...">
+        </div>
+        
+        <div class="user-actions">
+            <button class="theme-toggle" id="themeToggle">🌓</button>
+            <a href="likes.html"><i class="like">💓</i> Likes</a>
+            <a href="reviews.html">My Reviews</a>
+            <a href="watchlist.html" class="active">Watchlist</a>
+            <div class="profile-icon">JS</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">My Watchlist</h1>
+            <div class="watchlist-actions">
+                <button class="btn btn-primary" id="addMovieBtn">
+                    <span>+</span> Add Movie
+                </button>
+                <button class="btn btn-outline" id="filterBtn">
+                    <span>🔍</span> Filter
+                </button>
+            </div>
+        </div>
+
+        <!-- Watchlist Grid -->
+        <div class="movie-grid" id="watchlistGrid">
+            <!-- Movie cards will be dynamically inserted here -->
+        </div>
+
+        <div class="empty-state" id="emptyWatchlist">
+            <div class="empty-state-icon">🎬</div>
+            <h3>Your watchlist is empty</h3>
+            <p>Start adding movies you want to watch</p>
+            <button class="btn btn-primary" id="emptyAddBtn" style="margin-top: 1rem;">
+                <span>+</span> Add Your First Movie
+            </button>
+        </div>
+    </div>
+
+    <!-- Add Movie Modal -->
+    <div class="modal" id="addMovieModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Add to Watchlist</h3>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="search-container">
+                    <input type="text" id="movieSearch" class="search-input" placeholder="Search for movies...">
+                </div>
+                <div class="search-results" id="searchResults">
+                    <div class="no-results">Search for movies to add to your watchlist</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="cancelBtn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/watchlist.js"></script>
+</body>
+</html>
