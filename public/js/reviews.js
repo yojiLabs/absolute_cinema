@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('yearFilter').addEventListener('change', filterReviews);
 
     // would fetch user reviews from an API here
-    // Example:
+    // sample:
     // fetch('/api/users/me/reviews')
     //     .then(response => response.json())
     //     .then(data => {
