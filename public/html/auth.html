@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbsoluteCinema | Join Us</title>
+    <link rel="stylesheet" href="../css/auth.css"">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="logo">🖐️Absolute😐<span>Cinema🖐️</span></div>
+        
+        <div class="tabs">
+            <div class="tab active" data-tab="login">Log In</div>
+            <div class="tab" data-tab="signup">Sign Up</div>
+        </div>
+
+        <!-- Login Form -->
+        <form id="loginForm" class="auth-form active">
+            <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" class="form-control" required>
+            </div>
+            <button type="submit" class="btn">Log In</button>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+        </form>
+
+        <!-- Signup Form -->
+        <form id="signupForm" class="auth-form">
+            <div class="form-group">
+                <label for="signupFirstName">First Name</label>
+                <input type="text" id="signupFirstName" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="signupLastName">Last Name</label>
+                <input type="text" id="signupLastName" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="signupBirthdate">Birthdate</label>
+                <input type="date" id="signupBirthdate" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="signupEmail">Email</label>
+                <input type="email" id="signupEmail" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" class="form-control" required>
+            </div>
+            <button type="submit" class="btn">Create Account</button>
+        </form>
+    </div>
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>
