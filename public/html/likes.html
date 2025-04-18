@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Likes | AbsoluteCinema</title>
+    <link rel="stylesheet" href="../css/likes.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">🖐️Absolute😐<span>Cinema🖐️</span></a>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search for movies, directors, actors...">
+        </div>
+        
+        <div class="user-actions">
+            <button class="theme-toggle" id="themeToggle">🌓</button>
+            <a href="likes.html" class="active"><i class="like">💓</i> Likes</a>
+            <a href="reviews.html">My Reviews</a>
+            <a href="watchlist.html">Watchlist</a>
+            <div class="profile-icon">JS</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">My Likes</h1>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <div class="tabs">
+            <div class="tab active" data-tab="movies">Movies</div>
+            <div class="tab" data-tab="reviews">Reviews</div>
+        </div>
+
+        <!-- Movies Tab Content -->
+        <div id="movies-tab">
+            <div class="movie-grid" id="likedMovies">
+                <!-- Liked movie cards will be inserted here -->
+            </div>
+
+            <div class="empty-state" id="emptyMovies" style="display: none;">
+                <div class="empty-state-icon">★</div>
+                <h3>No liked movies yet</h3>
+                <p>Start liking movies to see them appear here</p>
+            </div>
+        </div>
+
+        <!-- Reviews Tab Content -->
+        <div id="reviews-tab" class="reviews-list">
+            <div id="likedReviews">
+                <!-- Liked review cards will be inserted here -->
+            </div>
+
+            <div class="empty-state" id="emptyReviews" style="display: none;">
+                <div class="empty-state-icon">★</div>
+                <h3>No liked reviews yet</h3>
+                <p>Start liking reviews to see them appear here</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/likes.js"></script>
+</body>
+</html>

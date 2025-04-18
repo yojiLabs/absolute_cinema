@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reviews | AbsoluteCinema</title>
+    <link rel="stylesheet" href="../css/reviews.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">🖐️Absolute😐<span>Cinema🖐️</span></a>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search for movies, directors, actors...">
+        </div>
+        
+        <div class="user-actions">
+            <button class="theme-toggle" id="themeToggle">🌓</button>
+            <a href="likes.html"><i class="like">💓</i> Likes</a>
+            <a href="reviews.html" class="active">My Reviews</a>
+            <a href="watchlist.html">Watchlist</a>
+            <div class="profile-icon">JS</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">My Reviews</h1>
+        </div>
+
+        <!-- Reviews Stats Overview -->
+        <div class="stats-overview">
+            <div class="stat-card">
+                <div class="stat-value">42</div>
+                <div class="stat-label">Total Reviews</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">4.2</div>
+                <div class="stat-label">Average Rating</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">1,284</div>
+                <div class="stat-label">Total Likes</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">24</div>
+                <div class="stat-label">Featured</div>
+            </div>
+        </div>
+
+        <!-- Review Filters -->
+        <div class="review-filters">
+            <div class="filter-group">
+                <span class="filter-label">Sort by:</span>
+                <select class="filter-select" id="sortBy">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="highest">Highest Rated</option>
+                    <option value="lowest">Lowest Rated</option>
+                    <option value="popular">Most Liked</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <span class="filter-label">Rating:</span>
+                <select class="filter-select" id="ratingFilter">
+                    <option value="all">All Ratings</option>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★</option>
+                    <option value="3">★★★</option>
+                    <option value="2">★★</option>
+                    <option value="1">★</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <span class="filter-label">Year:</span>
+                <select class="filter-select" id="yearFilter">
+                    <option value="all">All Years</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Reviews List -->
+        <div class="reviews-list" id="reviewsList">
+            <!-- Review cards will be inserted here -->
+        </div>
+
+        <div class="empty-state" id="emptyReviews" style="display: none;">
+            <div class="empty-state-icon">✍️</div>
+            <h3>No reviews yet</h3>
+            <p>Start reviewing movies to see them appear here</p>
+        </div>
+    </div>
+
+    <script src="../js/reviews.js"></script>
+</body>
+</html>

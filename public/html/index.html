@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbsoluteCinema - Film Diary</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">🖐️Absolute😐<span>Cinema🖐️</span></a>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search for movies, directors, actors...">
+        </div>
+        
+        <div class="user-actions">
+            <button class="theme-toggle" id="themeToggle">🌓</button>
+            <a href="likes.html"><i class="star">★</i> Likes</a>
+            <a href="reviews.html">My Reviews</a>
+            <a href="watchlist.html" class="active">Watchlist</a>
+            <div class="profile-icon">JS</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="section-title">
+            <h2>Recently Added</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        
+        <div class="movie-grid" id="recentlyAdded">
+            <!-- Movie cards will be dynamically inserted here -->
+        </div>
+        
+        <div class="section-title">
+            <h2>Popular This Week</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        
+        <div class="movie-grid" id="popularMovies">
+            <!-- Movie cards will be dynamically inserted here -->
+        </div>
+        
+        <div class="section-title">
+            <h2>From Your Watchlist</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        
+        <div class="movie-grid" id="watchlist">
+            <!-- Movie cards will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>
