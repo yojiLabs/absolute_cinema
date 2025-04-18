@@ -32,66 +32,74 @@
                 <p class="chat-subtitle">Your personal movie recommendation assistant</p>
             </div>
         </div>
-
-        <div class="chat-messages" id="chatMessages">
-            <!-- Bot welcome message -->
-            <div class="message bot-message">
-                <p>Hey there! I'm MartyBot, your personal movie guru. 🎬</p>
-                <p>I can recommend films based on your mood, activities, or preferences. Ask me anything movie-related!</p>
-                <div class="quick-suggestions">
-                    <div class="suggestion-chip">Recommend a comedy</div>
-                    <div class="suggestion-chip">What should I watch tonight?</div>
-                    <div class="suggestion-chip">Movies like Inception</div>
-                    <div class="suggestion-chip">I'm feeling nostalgic</div>
+    
+        <!-- Added messages container wrapper -->
+        <div class="chat-messages-container" id="messagesContainer">
+            <div class="chat-messages" id="chatMessages">
+                <!-- Bot welcome message -->
+                <div class="message bot-message">
+                    <p>Hey there! I'm MartyBot, your personal movie guru. 🎬</p>
+                    <p>I can recommend films based on your mood, activities, or preferences. Ask me anything movie-related!</p>
+                    <div class="quick-suggestions">
+                        <div class="suggestion-chip">Recommend a comedy</div>
+                        <div class="suggestion-chip">What should I watch tonight?</div>
+                        <div class="suggestion-chip">Movies like Inception</div>
+                        <div class="suggestion-chip">I'm feeling nostalgic</div>
+                    </div>
+                    <div class="message-time">Just now</div>
                 </div>
-                <div class="message-time">Just now</div>
-            </div>
-
-            <!-- Sample user message -->
-            <div class="message user-message">
-                <p>Recommend something for a rainy day</p>
-                <div class="message-time">2:45 PM</div>
-            </div>
-
-            <!-- Sample bot response with recommendation -->
-            <div class="message bot-message">
-                <p>For a cozy rainy day, I'd recommend these films:</p>
-                
-                <div class="recommendation-card">
-                    <img src="https://m.media-amazon.com/images/M/MV5BZjhkMDM4MWItZTVjOC00ZDRhLThmYTAtM2I5NzBmNmNlMzI1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_FMjpg_UX1000_.jpg" alt="The Grand Budapest Hotel" class="recommendation-poster">
-                    <div class="recommendation-info">
-                        <div class="recommendation-title">The Grand Budapest Hotel</div>
-                        <div class="recommendation-year">2014 • Comedy, Drama</div>
-                        <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">A whimsical adventure with stunning visuals and quirky characters.</p>
-                        <div class="recommendation-actions">
-                            <button class="rec-action-btn add-to-watchlist">+ Watchlist</button>
-                            <button class="rec-action-btn more-info">More info</button>
+    
+                <!-- Sample user message -->
+                <div class="message user-message">
+                    <p>Recommend something for a rainy day</p>
+                    <div class="message-time">2:45 PM</div>
+                </div>
+    
+                <!-- Sample bot response with recommendation -->
+                <div class="message bot-message">
+                    <p>For a cozy rainy day, I'd recommend these films:</p>
+                    
+                    <div class="recommendation-card">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZjhkMDM4MWItZTVjOC00ZDRhLThmYTAtM2I5NzBmNmNlMzI1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_FMjpg_UX1000_.jpg" alt="The Grand Budapest Hotel" class="recommendation-poster">
+                        <div class="recommendation-info">
+                            <div class="recommendation-title">The Grand Budapest Hotel</div>
+                            <div class="recommendation-year">2014 • Comedy, Drama</div>
+                            <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">A whimsical adventure with stunning visuals and quirky characters.</p>
+                            <div class="recommendation-actions">
+                                <button class="rec-action-btn add-to-watchlist">+ Watchlist</button>
+                                <button class="rec-action-btn more-info">More info</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="recommendation-card" style="margin-top: 1rem;">
-                    <img src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="The Shawshank Redemption" class="recommendation-poster">
-                    <div class="recommendation-info">
-                        <div class="recommendation-title">The Shawshank Redemption</div>
-                        <div class="recommendation-year">1994 • Drama</div>
-                        <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">A hopeful story perfect for reflection on a rainy day.</p>
-                        <div class="recommendation-actions">
-                            <button class="rec-action-btn add-to-watchlist">+ Watchlist</button>
-                            <button class="rec-action-btn more-info">More info</button>
+    
+                    <div class="recommendation-card" style="margin-top: 1rem;">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="The Shawshank Redemption" class="recommendation-poster">
+                        <div class="recommendation-info">
+                            <div class="recommendation-title">The Shawshank Redemption</div>
+                            <div class="recommendation-year">1994 • Drama</div>
+                            <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">A hopeful story perfect for reflection on a rainy day.</p>
+                            <div class="recommendation-actions">
+                                <button class="rec-action-btn add-to-watchlist">+ Watchlist</button>
+                                <button class="rec-action-btn more-info">More info</button>
+                            </div>
                         </div>
                     </div>
+    
+                    <div class="quick-suggestions" style="margin-top: 1rem;">
+                        <div class="suggestion-chip">More like these</div>
+                        <div class="suggestion-chip">Something more lighthearted</div>
+                        <div class="suggestion-chip">Show me thrillers instead</div>
+                    </div>
+                    <div class="message-time">2:46 PM</div>
                 </div>
-
-                <div class="quick-suggestions" style="margin-top: 1rem;">
-                    <div class="suggestion-chip">More like these</div>
-                    <div class="suggestion-chip">Something more lighthearted</div>
-                    <div class="suggestion-chip">Show me thrillers instead</div>
-                </div>
-                <div class="message-time">2:46 PM</div>
             </div>
         </div>
-
+    
+        <!-- Scroll to bottom button - placed here so it appears above input but below messages -->
+        <button class="scroll-to-bottom" id="scrollToBottomBtn" title="Scroll to bottom">
+            ↓
+        </button>
+    
         <div class="chat-input-container">
             <textarea class="chat-input" placeholder="Ask MartyBot for movie recommendations..." id="userInput"></textarea>
             <button class="send-button" id="sendButton">→</button>

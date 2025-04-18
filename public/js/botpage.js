@@ -23,10 +23,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const userInput = document.getElementById('userInput');
     const sendButton = document.getElementById('sendButton');
     
+    // Track scroll position
+    let isAtBottom = true;
+
     // Auto-scroll to bottom of chat
     function scrollToBottom() {
-        chatMessages.scrollTop = chatMessages.scrollHeight;
+        const container = document.getElementById('messagesContainer');
+        container.scrollTop = container.scrollHeight;
+        isAtBottom = true;
+        document.getElementById('scrollToBottomBtn').classList.remove('visible');
     }
+
+    // Check scroll position
+    function checkScrollPosition() {
+        const container = document.getElementById('messagesContainer');
+        const btn = document.getElementById('scrollToBottomBtn');
+        const threshold = 100; // pixels from bottom
+        const { scrollTop, scrollHeight, clientHeight } = container;
+        isAtBottom = scrollHeight - (scrollTop + clientHeight) < threshold;
+        
+        // Show/hide scroll-to-bottom button
+        if (isAtBottom) {
+            btn.classList.remove('visible');
+        } else {
+            btn.classList.add('visible');
+        }
+    }
+
+    // Initialize scroll events
+    document.getElementById('messagesContainer').addEventListener('scroll', checkScrollPosition);
+    document.getElementById('scrollToBottomBtn').addEventListener('click', scrollToBottom);
     
     // Add sample message (in a real app, this would be API calls)
     function addMessage(text, isUser) {
